@@ -48,7 +48,7 @@
     }
 
     #navMenu {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
