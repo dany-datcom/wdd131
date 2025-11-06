@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #68A1A0;
+    --secondary-color: #02403F;
+    --background-color: #F5F5F5;
+    --text-color: #333;
+    --font-body: 'Open Sans', Arial, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin: 0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+  background-color: var(--primary-color); 
+  color: #050505; 
+  transition: all 0.3s ease; 
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    max-width: 900px;
+    padding: 1rem;
+}
+
+main h1 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+}
+
+.temple-card {
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.temple-card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.temple-card p {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* --- Hamburger menu --- */
+#menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block; /* solo visible en móvil */
+  margin-left: auto;
+}
+
+/* Ocultar menú al inicio en móvil */
+#navMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+#navMenu.show {
+  display: flex;
+}

@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+
+    body {
+        padding: 2rem 4rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+
+        text-align: center;
+    }
+
+    .temple-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .temple-card p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
