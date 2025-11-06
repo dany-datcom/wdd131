@@ -51,5 +51,6 @@
         display: flex !important;
         flex-direction: row;
         justify-content: center;
+        gap: 1rem;
     }
 }

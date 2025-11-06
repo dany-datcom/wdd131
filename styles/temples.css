@@ -109,18 +109,16 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Hamburger menu --- */
 #menuButton {
   background: none;
   border: none;
   color: white;
   font-size: 2rem;
   cursor: pointer;
-  display: block; /* solo visible en móvil */
+  display: block; 
   margin-left: auto;
 }
 
-/* Ocultar menú al inicio en móvil */
 #navMenu {
   display: none;
   flex-direction: column;
