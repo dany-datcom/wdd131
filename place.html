@@ -41,10 +41,10 @@
         </aside>
 
         <aside class="weather" aria-labelledby="weather-heading">
-          <h2 id="weather-heading">Weather <span class="weather-icon-mobile" aria-hidden="true"></span></h2>
+          <!-- SVG icon for mobile view (visible on small screens) -->
+          <img src="images/sun.png" alt="Weather icon showing sun and clouds" class="weather-svg">
 
-          <!-- SVG icon for mobile view (file: images/weather.svg) -->
-          <img src="images/weather.svg" alt="" class="weather-svg" aria-hidden="true">
+          <h2 id="weather-heading">Weather</h2>
 
           <!-- Static displayed values (must match JS static inputs) -->
           <p class="temp"><strong>Temperature:</strong> <span id="temp-value">5</span>°C</p>
