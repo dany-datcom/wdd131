@@ -1,0 +1,28 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.hero {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Imagen responsiva */
+.hero img {
+  width: 100%;
+  height: auto; /* mantiene la proporción */
+  display: block;
+}
+
+/* Alternativa (si quieres recorte tipo “cover”) */
+/*
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+*/
