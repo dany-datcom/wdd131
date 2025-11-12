@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Dany Jimenez" />
+  <meta name="description" content="Country page about Costa Rica. Responsive hero, overlayed data & weather." />
+  <title>Place - Costa Rica</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/place.css">
+
+  <!-- JS (defer) -->
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Costa Rica</h1>
+    <p class="tagline">The land of Pura Vida</p>
+  </header>
+
+  <main>
+    <!-- HERO: uses <picture> + srcset (browser chooses) -->
+    <section class="hero" aria-label="Hero section showing a landscape">
+      <picture class="hero-picture" aria-hidden="true">
+        <!-- large for wide screens -->
+        <source srcset="images/costa-large.webp" media="(min-width: 1000px)">
+        <!-- medium -->
+        <source srcset="images/costa-medium.webp" media="(min-width: 600px)">
+        <!-- small default -->
+        <img src="images/costa-small.webp" alt="Coastal landscape of Costa Rica" width="1500" height="750">
+      </picture>
+
+      <!-- Overlay blocks positioned on top of the hero image -->
+      <div class="hero-overlay">
+        <aside class="data" aria-labelledby="about-heading">
+          <h2 id="about-heading">About</h2>
+          <p><strong>Capital:</strong> San José</p>
+          <p><strong>Population:</strong> 5 million</p>
+          <p><strong>Language:</strong> Spanish</p>
+        </aside>
+
+        <aside class="weather" aria-labelledby="weather-heading">
+          <h2 id="weather-heading">Weather <span class="weather-icon-mobile" aria-hidden="true"></span></h2>
+
+          <!-- SVG icon for mobile view (file: images/weather.svg) -->
+          <img src="images/weather.svg" alt="" class="weather-svg" aria-hidden="true">
+
+          <!-- Static displayed values (must match JS static inputs) -->
+          <p class="temp"><strong>Temperature:</strong> <span id="temp-value">5</span>°C</p>
+          <p class="wind"><strong>Wind Speed:</strong> <span id="wind-value">20</span> km/h</p>
+          <p id="windchill"><strong>Wind Chill:</strong> <span id="windchill-value">—</span></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="copyright-year"></span> | Costa Rica Page</p>
+    <p id="lastModified">Last modified: </p>
+  </footer>
+</body>
+</html>
