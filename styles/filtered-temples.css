@@ -46,7 +46,6 @@ header h1 {
 /* ========== NAV MENU ========== */
 nav ul {
     list-style: none;
-    display: none; /* cerrado en móvil */
     flex-direction: column;
     align-items: center;
     display: flex;  
