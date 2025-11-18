@@ -1,0 +1,75 @@
+@media (min-width: 768px) {
+
+    body {
+        padding: 2rem 4rem;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    main {
+        display: block;
+        max-width: none;
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    main h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        /* ❌ grid-column eliminado */
+    }
+
+    #temple-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .temple-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .temple-card p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ⭐ Garantiza que el menú se muestre al cambiar de móvil a desktop */
+    #navMenu.show {
+        display: flex;
+    }
+}
