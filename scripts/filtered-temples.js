@@ -151,11 +151,11 @@ document.querySelector("nav").addEventListener("click", (e) => {
 // =======================
 // Hamburger Menu
 // =======================
-const menuButton = document.getElementById("menuButton");
-const navMenu = document.getElementById("navMenu");
+const menuButton = document.querySelector("#menuButton");
+const navMenu = document.querySelector("#navMenu");
 
 menuButton.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
+    navMenu.classList.toggle("open");
 });
 
 
