@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: #FAF7FF;
+    color: #4E4B6A;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #B47AE2;
+}
+
+.accent {
+    font-family: 'Playfair Display', serif;
+    color: #9C89B8;
+}
+
+.color-box {
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+.primary {
+    background-color: #B47AE2;
+}
+
+.secondary {
+    background-color: #9C89B8;
+}
+
+.lightbg {
+    background-color: #FAF7FF;
+    border: 1px solid #ddd;
+}
+
+.soft {
+    background-color: #E8D7FF;
+}
+
+.dark {
+    background-color: #4E4B6A;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.wireframe img {
+    max-width: 300px;
+    border: 2px solid #9C89B8;
+    border-radius: 8px;
+    margin-right: 20px;
+}
