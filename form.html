@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- PRODUCT NAME -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- OVERALL RATING -->
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+
+                <label>
+                    <input type="radio" name="rating" id="rate1" value="1" required>
+                    ☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" id="rate2" value="2">
+                    ☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" id="rate3" value="3">
+                    ☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" id="rate4" value="4">
+                    ☆☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" id="rate5" value="5">
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <!-- DATE INSTALLED -->
+            <label for="installed">Date of Installation</label>
+            <input type="date" id="installed" name="installed" required>
+
+            <!-- USEFUL FEATURES -->
+            <fieldset>
+                <legend>Useful Features (select all that apply)</legend>
+
+                <label><input type="checkbox" id="feature1" name="features" value="Easy to Use"> Easy to Use</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Durable"> Durable</label>
+                <label><input type="checkbox" id="feature3" name="features" value="High Performance"> High
+                    Performance</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Energy Efficient"> Energy
+                    Efficient</label>
+            </fieldset>
+
+            <!-- WRITTEN REVIEW -->
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="5" placeholder="Write your review..."></textarea>
+
+            <!-- USER NAME -->
+            <label for="username">Your Name (optional)</label>
+            <input type="text" id="username" name="username" placeholder="Your name">
+
+            <!-- SUBMIT -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Dany Josue Jimenez Gonzalez | BYU-I WDD 130</p>
+    </footer>
+</body>
+
+</html>
