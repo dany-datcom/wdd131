@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Submit your product review using our user-friendly form. Rate products, choose useful features, and share your installation details.">
+    <meta name="author" content="Dany Jimenez">
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/form.js"></script>
@@ -23,29 +26,23 @@
             </select>
 
             <!-- OVERALL RATING -->
-            <fieldset class="rating">
+            <fieldset>
                 <legend>Overall Rating</legend>
 
-                <label>
-                    <input type="radio" name="rating" id="rate1" value="1" required>
-                    ☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" id="rate2" value="2">
-                    ☆☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" id="rate3" value="3">
-                    ☆☆☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" id="rate4" value="4">
-                    ☆☆☆☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" id="rate5" value="5">
-                    ☆☆☆☆☆
-                </label>
+                <label for="rating1">☆</label>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+
+                <label for="rating2">☆☆</label>
+                <input type="radio" id="rating2" name="rating" value="2" required>
+
+                <label for="rating3">☆☆☆</label>
+                <input type="radio" id="rating3" name="rating" value="3" required>
+
+                <label for="rating4">☆☆☆☆</label>
+                <input type="radio" id="rating4" name="rating" value="4" required>
+
+                <label for="rating5">☆☆☆☆☆</label>
+                <input type="radio" id="rating5" name="rating" value="5" required>
             </fieldset>
 
             <!-- DATE INSTALLED -->
@@ -78,7 +75,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 | Dany Josue Jimenez Gonzalez | BYU-I WDD 130</p>
+        <p>&copy; 2025 | Dany Josue Jimenez Gonzalez | WDD 130</p>
     </footer>
 </body>
 
